@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0E0E0"
+    tools:context="com.proveedoradeclimas.sacalmacen.actividades.FirmaActivity">
+
+    <TextView
+        android:id="@+id/txt_firma_tipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTipo"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:textSize="18sp">
+    </TextView>
+
+    <com.proveedoradeclimas.sacalmacen.clases.DrawingView
+        android:id="@+id/drawing"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFFFF"
+        android:layout_gravity="center_horizontal">
+    </com.proveedoradeclimas.sacalmacen.clases.DrawingView>
+
+    <EditText
+        android:id="@+id/edtxt_firma_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:inputType="textCapWords"
+        android:imeOptions="actionDone"
+        android:hint="@string/hintNombre" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--<Button
+            android:id="@+id/btn_firma_guardar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="3dp"
+            android:background="#036EB5"
+            android:drawableLeft="@drawable/floppy"
+            android:drawablePadding="0dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnGuardar">
+        </Button>
+
+        <Button
+            android:id="@+id/btnLimpiar"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="3dp"
+            android:background="#cc3300"
+            android:drawableLeft="@drawable/barcode"
+            android:drawablePadding="0dp"
+            android:paddingBottom="3dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/btnLimpiar" >
+        </Button>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_firma_limpiar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/eraser_32_white"
+                android:theme="@style/btnPurple"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_firma_guardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/floppy"
+                android:theme="@style/btnBlue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

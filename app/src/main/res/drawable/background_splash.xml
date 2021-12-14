@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <item
+        android:drawable="@color/blanco" />
+
+    <item>
+        <!--<bitmap
+            android:gravity="center"
+            android:src="@drawable/logo_2" />-->
+        <!--<bitmap
+            android:gravity="center"
+            android:src="@drawable/splash_provee_icon_red" />-->
+
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/logo_provee_o_96" />
+    </item>
+
+</layer-list>

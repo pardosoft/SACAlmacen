@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.proveedoradeclimas.sacalmacen.actividades.ScanInventarioLineaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/blanco"
+        android:subtitleTextColor="@color/blanco"
+        app:titleTextColor="@color/blanco"
+        app:subtitleTextColor="@color/blanco"
+        app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/ubicacion"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_scanlinea_ubicacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/no_ubicacion"
+            android:textSize="16sp"
+            android:textColor="#1b8ec3" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtxt_scanlinea_serie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:hint="@string/hintSerie"
+        android:inputType="text"
+        android:clickable="false"
+        android:longClickable="false"
+        android:focusable="false" />
+
+    <TextView
+        android:id="@+id/txt_scanlinea_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="#282828"
+        android:textColor="#FFFFFF" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/list_scanlinea_series"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+    </ListView>
+
+</LinearLayout>

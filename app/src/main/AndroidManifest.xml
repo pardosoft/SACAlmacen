@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.proveedoradeclimas.sacalmacen"
+    android:versionCode="1"
+    android:versionName="@string/versionApp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".clases.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/another_provee_icon_6"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".actividades.SplashScreenActivity"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".actividades.MenuInicioActivity"
+            android:label="@string/title_activity_menu_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".actividades.SalidasActivity"
+            android:label="@string/title_activity_salidas"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".actividades.EntradaActivity"
+            android:label="@string/title_activity_entrada"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.ScanInventarioActivity"
+            android:label="@string/title_activity_escaneado_inventario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.ScanModeloSerieActivity"
+            android:label="@string/title_activity_escaneado_modelo_serie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".actividades.FirmaActivity" />
+        <activity
+            android:name=".actividades.ScanSerieActivity"
+            android:label="@string/title_activity_scan_serie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.ScanSerieGuiaActivity"
+            android:label="@string/title_activity_scan_serie_guia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.ToolsActivity"
+            android:label="@string/title_activity_tools"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.ReimprimirActivity"
+            android:label="@string/title_activity_reimprimir"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.InventarioActivity"
+            android:label="@string/title_activity_inventario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.InventarioMontacargasActivity"
+            android:label="@string/title_activity_inventario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".actividades.TransferenciaActivity"
+            android:label="@string/title_activity_transferencia"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".actividades.DevolucionActivity"
+            android:label="@string/title_activity_devolucion"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".actividades.AjusteActivity"
+            android:label="@string/title_activity_ajuste"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".actividades.ScanAjusteActivity"
+            android:label="@string/title_activity_scan_ajuste"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".actividades.ApartadoActivity" />
+        <activity
+            android:name=".actividades.ScanInventarioLineaActivity"
+            android:label="@string/title_activity_escaneado_modelo_serie"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".actividades.TestActivity" />
+    </application>
+
+</manifest>

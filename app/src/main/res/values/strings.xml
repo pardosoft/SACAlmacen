@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">SAC Almacen</string>
+    <string name="versionApp">2.0.5</string>
+    <string name="versionAppMenu">Version: 2.0.5</string>
+
+    <!-- Generales -->
+    <string name="btnBuscar">Buscar</string>
+    <string name="hintRemision">Remisión</string>
+    <string name="hintGuia">Guía</string>
+    <string name="lblPedido">Pedido:</string>
+    <string name="lblProducto">Producto</string>
+    <string name="lblCantidad">Cantidad</string>
+    <string name="lblOrdenCompra">O. C.</string>
+    <string name="lblRemision">Remisión:</string>
+    <string name="hintModelo">Modelo</string>
+    <string name="hintSerie">Serie</string>
+    <string name="hintOrdenCompra">Orden de Compra</string>
+    <string name="hintUser">Usuario</string>
+    <string name="hintPass">Constraseña</string>
+
+    <string name="title_activity_menu_inicio">Inicio</string>
+
+    <!-- SettingsActivity -->
+    <string name="title_activity_settings">Conexiones</string>
+    <string name="wsPrincipal">WebService Principal</string>
+    <string name="wsSecundario">WebService Secundario</string>
+    <string name="wsImpresion">WebService Impresión</string>
+    <string name="secretWord">Secret Word</string>
+    <string name="passWord">Password</string>
+    <string name="proyecto">Proyecto Asignado</string>
+
+    <!-- SalidasActivity -->
+    <string name="title_activity_salidas">Salidas</string>
+    <string name="lblGuia">Requiere Guía</string>
+
+    <!-- EntradaActivity -->
+    <string name="title_activity_entrada">Entradas</string>
+    <string name="hintFolio">Folio</string>
+    <string name="hintPlacas">Placas</string>
+
+    <!-- InventarioActivity -->
+    <string name="title_activity_inventario">Inventario</string>
+    <string-array name="arrayTomaInventario">
+        <item>Inventario</item>
+        <item>Carga Inicial</item>
+    </string-array>
+    <string name="ubicacion">Ubicación:</string>
+    <string name="no_ubicacion">Sin Ubicación</string>
+    <string name="inventario_linea">Inventario en Línea</string>
+
+    <string name="title_activity_escaneado_inventario">Escanear</string>
+
+    <string name="title_activity_escaneado_modelo_serie">Escanear</string>
+
+    <!-- FirmaActivity -->
+    <string name="lblTipo">Firma de: </string>
+    <string name="hintNombre">Nombre</string>
+
+
+    <string name="title_activity_scan_serie">Escanear Serie</string>
+    <string name="title_activity_scan_serie_guia">Serie y Guía</string>
+    <string name="title_activity_scan_ajuste">Escanear Ajuste</string>
+
+    <string name="title_activity_transferencia">Transferencia</string>
+    <string name="title_activity_devolucion">Devolución</string>
+    <string name="title_activity_ajuste">Ajuste</string>
+
+    <string name="title_activity_tools">Tools</string>
+
+    <string name="title_activity_reimprimir">Reimprimir</string>
+    <string name="hintCamion">Camión</string>
+    <string-array name="arrayOrigen">
+        <item>Entrada</item>
+        <item>Salida</item>
+        <item>Transferencia</item>
+    </string-array>
+
+    <string-array name="tipoAjustes">
+        <item>Salida Autorizada</item>
+        <item>Merma</item>
+        <item>Devolución Cliente</item>
+        <item>Salida Golpeado</item>
+        <item>Perdida Total</item>
+        <item>Arranque Inv. Incremento</item>
+        <item>Arranque Inv. Decremento</item>
+        <item>Salidas Colocacion Resistencia</item>
+        <item>Entrada Colocacion Resistencia</item>
+        <item>Entradas por Recuperacion</item>
+        <item>Devolucion de Equipo Prestado</item>
+        <item>Entrada Equipo Golpeado</item>
+        <item>Entrada Refaccion otro Equipo</item>
+        <item>Refaccion para Reparar Equipo</item>
+        <item>Salidas por Alteracion Equipo</item>
+        <item>Entrada por Alteracion Equipo</item>
+        <item>Salida Transferencia</item>
+        <item>Entrada Transferencia</item>
+        <item>Ajuste Incremento</item>
+        <item>Ajuste Decremento</item>
+        <item>Cambio Modelo Incremento</item>
+        <item>Cambio Modelo Decremento</item>
+    </string-array>
+
+    <string-array name="listaEmpresas">
+        <item>Proveedora de Climas</item>
+        <item>Eurotyres MTY</item>
+        <item>Eurotyres SLP</item>
+    </string-array>
+
+</resources>

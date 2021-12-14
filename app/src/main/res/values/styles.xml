@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorProveedora</item>
+        <item name="colorPrimaryDark">@color/background_material_dark</item>
+        <item name="colorAccent">@color/colorProveedora</item>
+        <item name="colorControlNormal">#535A5A</item>
+        <item name="colorControlActivated">@color/colorProveedora</item>
+        <item name="colorControlHighlight">@color/colorProveedora</item>
+        <!--<item name="android:textColorSecondary">#ffffff</item>-->
+    </style>
+
+    <style name="ToolbarA" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColorSecondary">@color/blanco</item>
+        <item name="colorPrimary">@color/colorProveedora</item>
+    </style>
+
+    <style name="ToolbarTest" parent="AppTheme">
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="btnMenuBlue" parent="Theme.AppCompat.Dialog">
+        <item name="colorControlHighlight">#3498db</item>
+        <item name="colorButtonNormal">#3498db</item>
+    </style>
+
+    <style name="btnBuscar" parent="Theme.AppCompat.Dialog">
+        <item name="colorButtonNormal">#c0ca33</item>
+        <item name="colorControlHighlight">#9e9d24</item>
+    </style>
+
+    <style name="btnGreen" parent="Theme.AppCompat.Dialog">
+        <item name="colorButtonNormal">#27ae60</item>
+        <item name="colorControlHighlight">#228A4F</item>
+    </style>
+
+    <style name="btnBlue" parent="Theme.AppCompat.Dialog">
+        <item name="colorButtonNormal">#3498db</item>
+        <item name="colorControlHighlight">#236D9E</item>
+    </style>
+
+    <style name="btnPurple" parent="Theme.AppCompat.Dialog">
+        <item name="colorButtonNormal">#9b59b6</item>
+        <item name="colorControlHighlight">#853CA3</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/background_splash</item>
+    </style>
+
+</resources>

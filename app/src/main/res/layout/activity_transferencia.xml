@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_transferencia"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#ffffff"
+    tools:context="com.proveedoradeclimas.sacalmacen.actividades.TransferenciaActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="@color/blanco"
+        android:subtitleTextColor="@color/blanco"
+        app:titleTextColor="@color/blanco"
+        app:subtitleTextColor="@color/blanco"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <LinearLayout
+        android:id="@+id/linear_transferencia_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_vertical_margin"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edtxt_transferencia_remision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hintRemision"
+            android:inputType="text"
+            android:imeOptions="actionSearch"/>
+
+        <Button
+            android:id="@+id/btn_transferencia_buscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/search"
+            android:visibility="visible"
+            android:text="@string/btnBuscar"
+            android:theme="@style/btnBuscar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_transferencia_encontrado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/lblRemision" />
+
+            <TextView
+                android:id="@+id/txt_transferencia_remision"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_weight="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/edtxt_transferencia_origen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
+                android:inputType="text"
+                />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/aa2e"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/edtxt_transferencia_destino"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:longClickable="false"
+                android:inputType="text"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:orientation="vertical"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#010101"
+                android:text="@string/lblProducto"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_weight="3"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#010101"
+                android:text="@string/lblCantidad"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <ListView
+                android:id="@+id/lista_transferencia_productos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            </ListView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/btn_transferencia_escanear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/barcode_scan"
+                android:theme="@style/btnGreen"
+                />
+
+            <ImageButton
+                android:id="@+id/btn_transferencia_guardar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/floppy"
+                android:theme="@style/btnBlue"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

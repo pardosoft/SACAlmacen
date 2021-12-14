@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_login_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtxt_layout_login_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintUser"
+        android:inputType="text|textNoSuggestions"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:id="@+id/edtxt_layout_login_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintPass"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        />
+
+</LinearLayout>
